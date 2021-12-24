@@ -15,6 +15,22 @@ p {
 	color: #FBF1C7;
 }
 
+a:link {
+  color: #00FF00;
+}
+
+a:visited {
+  color: #FBF1C7;
+}
+
+/*a:hover {
+  color: hotpink;
+}*/
+
+/*a:active {
+  color: blue;
+}*/
+
 ol {
 	color: #00FF00;
 }
