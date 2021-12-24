@@ -1,6 +1,9 @@
 * {
 	font-family: monospace;
-	background-image: url("wallpaper.jpg")/* background: #282828; */
+	background-image: url("./wallpaper.jpg"); /* background: #282828; */
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
 }
 
 h1 {
