@@ -1,1 +1,9 @@
+* {
+	font-family: monospace;
+	background-color: #282828;
+}
 
+h1 {
+	color: #79740E;
+	text-align: center;
+}
