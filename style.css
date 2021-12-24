@@ -1,11 +1,7 @@
 * {
 	font-family: monospace;
-	background-image: url("./wallpaper.jpg"); /* background: #282828; */
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-attachment: fixed;
+	background: #282828;
 }
-
 h1 {
 	color: #00FF00;
 	text-align: center;
