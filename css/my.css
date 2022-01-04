@@ -1,0 +1,32 @@
+* {
+	font-family: monospace;
+	background: #282828;
+}
+h1, h2 {
+	color: #00FF00;
+	text-align: center;
+}
+
+h3 {
+	color: #00FF00;
+}
+
+p {
+	color: #FBF1C7;
+}
+
+a:link, a:visited {
+  color: #00FF00;
+}
+
+/*a:hover {
+  color: hotpink;
+}*/
+
+/*a:active {
+  color: blue;
+}*/
+
+ol {
+	color: #00FF00;
+}
