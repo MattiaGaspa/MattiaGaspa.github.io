@@ -27,6 +27,6 @@ a:link, a:visited {
   color: blue;
 }*/
 
-ol {
+ol, ul {
 	color: #00FF00;
 }
