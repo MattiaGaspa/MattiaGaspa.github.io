@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>MG's website</title>
@@ -38,7 +38,17 @@
 		<h3>Issues</h3>
 		<p>The wi-fi doesn't work and installing <em>linux-firmware</em> didn't work. I haven't tested the other peripherals since I haven't used them in my life (what the f*ck does an infrared interface does on a pc???).</p>
 		<h3>Final thought</h3>
+		<p style="font-size:80%; color:#00FF00;"><em>19/02/2022</em></p></div>
 		<p>The laptop is pretty usable for office, LibreOffice works perfectly. Using firefox is not the best idea, but I think that other web browser can work pretty well. IMO this pc can be a nice firewall for the home network (of course not the best).</p>
+		<h3>Update</h3>
+		<p>After a reinstall, I changed the filesystems</p>
+		<ol>
+			<li><p><em>/dev/sda1</em> (boot partition): is now a vfat partition;</p></li>
+			<li><p><em>/dev/sda3</em> (root partition): is now an <a href="https://it.wikipedia.org/wiki/XFS_(file_system)">xfs partition</a>, a more performing filesystem.</p></li>
+		</ol>
+		<p>I also replaced Firefox with <a href="https://www.netsurf-browser.org/">netsurf</a> browser, which is MOOOOOOOOOOOORE lightweight.</p>
+		<p>Unfortunately, while I was using the zathura pdf reader, the system crashed and I had to force shutdown throught poweroff button. After that the system gave an <em>Initramfs error</em>...</p>
+		<p>I tried to reinstall Alpine Linux but also the live ISO got the same error. Fortunately sometimes the system boot up properly so, when I will have time, I will reinstall the whole thing.</p>
 	</body>
 	<footer>
 	<p><a href="./blog.html">Back to articles</a></p>
