@@ -3,12 +3,12 @@
 	background: #282828;
 }
 h1, h2 {
-	color: #00FF00;
+	color: #1EC9C1;
 	text-align: center;
 }
 
 h3, h4, hr, b {
-	color: #00FF00;
+	color: #1EC9C1;
 }
 
 p {
@@ -16,7 +16,7 @@ p {
 }
 
 a:link, a:visited {
-  color: #00FF00;
+  color: #1EC9C1;
 }
 
 /*a:hover {
@@ -28,5 +28,5 @@ a:link, a:visited {
 }*/
 
 ol, ul {
-	color: #00FF00;
+	color: #1EC9C1;
 }
