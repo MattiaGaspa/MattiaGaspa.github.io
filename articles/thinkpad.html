@@ -12,8 +12,8 @@
 		<hr>
 		<h3>Thinkpad experience</h3>
 		<p style="font-size:80%; color:#1EC9C1;"><em>28/01/2022</em></p></div>
-		<p>Some days ago I found an old Thinkpad T41 that my dad found a lot of time ago in a dumpster. The original project was to install gentoo, but I later discovered that it was a single core.</p>
-		<p><b>Holy sh*t</b>: it would have taken me a lifetime, without considering that it could have crashed. But let's start from the beginning...</p>
+		<p>Some days ago I found an old Thinkpad T41 that my dad found a lot of time ago in a dumpster. The original project was to install gentoo:</p>
+		<p>it would have taken me a lifetime, without considering that it could have crashed. And I have neither the patience nor the desire</p>
 		<h3>Hardware</h3>
 		<p>The pc is an old Thinkpad T41. All components are original and the specs are:</p>
 		<ul>
@@ -25,21 +25,21 @@
 		<h3>OS</h3>
 		<p>At first I was undecided between:</p>
 		<ol>
-			<li><p><b>Debian</b>: but then I discarded it because it uses <a href="https://en.wikipedia.org/wiki/Systemd">systemd</a> (which is obviously bloated for this system);</p></li>
-			<li><p><b>Void</b>: because it uses <a href="https://en.wikipedia.org/wiki/Runit">runit</a>, which is lighter than systemd. But I wanted to go further;</p></li>
-			<li><p><b>Alpine</b>: the chosen one, because it use <a href="https://en.wikipedia.org/wiki/OpenRC">OpenRC</a>, my favourite init system, and it uses <a href="https://en.wikipedia.org/wiki/Musl">musl</a>, a lightweight alternative to <a href="https://en.wikipedia.org/wiki/Glibc">glibc</a> even if it is not as complete as the latter.</p></li>
+			<li><p><b>Debian</b>: but then I discarded it because it uses <a href="https://en.wikipedia.org/wiki/Systemd">systemd</a> obviously bloated for this system, but still has a lot of support for the architecture;</p></li>
+			<li><p><b>Void</b>: because it uses <a href="https://en.wikipedia.org/wiki/Runit">runit</a>, which is lighter than systemd. But not lighter enough;</p></li>
+			<li><p><b>Alpine</b>: the chosen one, because it use <a href="https://en.wikipedia.org/wiki/OpenRC">OpenRC</a>, my favourite init system, and it uses <a href="https://en.wikipedia.org/wiki/Musl">musl</a>, a lightweight alternative to <a href="https://en.wikipedia.org/wiki/Glibc">glibc</a>. It is not as complete as the latter but who cares: it runs faster!.</p></li>
 		</ol>
-		<p>During the automatic installation of Alpine Linux, using the <b>setup-alpine</b> command, I had a system crash because, after the root partition format, the system couldn't mount properly mount the partion on <em>/mnt</em>.</p>
-		<p>I had to do a <a href="https://docs.alpinelinux.org/user-handbook/0.1a/Installing/manual.html">semi-automatic installation</a> so, after setting the various things, I manually partitioned and formatted the disk, mounted it and <b>BOOM</b> Alpine was installed! (after running <b>setup-disk /mnt</b>)</p>
+		<p>During the automatic installation of Alpine Linux, using the <b>setup-alpine</b> command, I issued system crash because, after the formatting of the root partition, the system couldn't mount properly mount the partion on <em>/mnt</em>.</p>
+		<p>I had to do a <a href="https://docs.alpinelinux.org/user-handbook/0.1a/Installing/manual.html">semi-automatic installation</a> so, after setting various things, I manually partitioned and formatted the disk, mounted it and <b>BOOM</b> Alpine was installed! (after running <b>setup-disk /mnt</b>)</p>
 		<h3>Features</h3>
-		<p>The system uses an 100M ext4 boot partition, a 70G jfs root partition and a 1.2G swap partition. I have chosen a <a href="https://en.wikipedia.org/wiki/JFS_(file_system)">jfs</a> filesystem for the root partiotion because I have read that use less system resources than zfs or ext4.</p>
-		<p>For desktop usage I have tried a lot of window manager, like ratpoison, swaywm, i3wm and icewm, and the best was icewm. Ratpoison often crashed while i3wm and swaywm was slower than icewm, the only cons of icewm is that I have never used it and the default configuration and themes sucks.</p>
-		<p>With flatpak installed I have been able to install telegram-desktop but not all applications are available (not and amd64 architecture).</p>
+		<p>The system uses a 100M ext4 boot partition, a 70G jfs root partition and a 1.2G swap partition. I have chosen a <a href="https://en.wikipedia.org/wiki/JFS_(file_system)">jfs</a> filesystem for the root partiotion because I have read that use less system resources than zfs or ext4.</p>
+		<p>For the GUI I tried lot of window manager: ratpoison, swaywm, i3wm and icewm for example. Ratpoison was fast but  often crashed while i3wm and swaywm were slower. Even if I still don't know how to properly <em>rice</em> it I went for IceWM since it was the lightest.</p>
+		<p>With flatpak installed I was able to install packages like telegram-desktop but not all applications are available for the architecture.</p>
 		<h3>Issues</h3>
-		<p>The wi-fi doesn't work and installing <em>linux-firmware</em> didn't work. I haven't tested the other peripherals since I haven't used them in my life (what the f*ck does an infrared interface does on a pc???).</p>
+		<p>The wi-fi doesn't work and installing <em>linux-firmware</em> didn't work. I haven't tested other peripherals since I haven't used them in my life (what the f*ck does an infrared interface does on a pc???).</p>
 		<h3>Final thought</h3>
 		<p style="font-size:80%; color:#1EC9C1;"><em>19/02/2022</em></p></div>
-		<p>The laptop is pretty usable for office, LibreOffice works perfectly. Using firefox is not the best idea, but I think that other web browser can work pretty well. IMO this pc can be a nice firewall for the home network (of course not the best).</p>
+		<p>The laptop is pretty usable for office, LibreOffice works perfectly. Using firefox is not the best idea, but I think that other web browser can work pretty well.</p>
 		<h3>Update</h3>
 		<p>After a reinstall, I changed the filesystems</p>
 		<ol>
@@ -51,7 +51,7 @@
 		<p>I tried to reinstall Alpine Linux but also the live ISO got the same error. Fortunately sometimes the system boot up properly so, when I will have time, I will reinstall the whole thing.</p>
 		<h3>Update of the update</h3>
 		<p>After some adventure, for example bending the pin of the PATA connection, I got Alpine Linux back in the machine.</p>
-		<p>However, last week, I got the machine back up after a couple of months and I had the smartest idea to upgrade the system. Now the newer version of the Linux kernel in the Alpine repository requires FORCE_PAE in the computer, which I don't have.</p>
+		<p>However, last week, I got the machine back up after a couple of months of break and I had the smartest idea to upgrade the system. Now the newer version of the Linux kernel in the Alpine repository requires FORCE_PAE in the computer, which I don't have.</p>
 		<p>Press F to pay respect to Alpine Linux. Time to find another distro for good ol' computers.</p>
 	</body>
 	<footer>
